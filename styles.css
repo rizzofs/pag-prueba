@@ -1,0 +1,168 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fondo general con gradiente */
+body {
+    background: linear-gradient(135deg, #007bff, #6c63ff);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor del título */
+.title-container {
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.title-container h1 {
+    font-size: 2em;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Enlaces de navegación */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+.navbar-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-links li a:hover {
+    color: #ffdd57;
+}
+
+/* Botón de inicio de sesión */
+.navbar-login .login-button {
+    padding: 0.5em 1.2em;
+    background-color: #ffdd57;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar-login .login-button:hover {
+    background-color: #ffc107;
+    transform: scale(1.1);
+}
+
+/* Contenedor del ranking */
+.ranking-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 1.5em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.ranking-container h2 {
+    font-size: 1.8em;
+    color: #ffdd57;
+    margin-bottom: 1em;
+}
+
+/* Estilo para cada ítem del ranking */
+.ranking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.ranking-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+.name {
+    font-size: 1.1em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Estrellas */
+.stars {
+    display: flex;
+    gap: 0.3em;
+}
+
+.star {
+    color: #ffdd57; /* Estrella llena */
+    font-size: 1.5em;
+}
+
+.star:last-child {
+    color: #999; /* Estrella vacía */
+}
+
+/* Contenedor del mensaje destacado */
+.p-container {
+    font-size: 1.5em;
+    color: #ffdd57;
+    text-align: center;
+    margin: 2em 0;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.9em;
+    margin-top: auto;
+}
+
+footer p {
+    margin-bottom: 0.5em;
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffc107;
+}
